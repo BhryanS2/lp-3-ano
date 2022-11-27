@@ -1,7 +1,6 @@
-import 'package:bancocompleto/helper/AnotacaoHelper.dart';
+import '../helper/AnotacaoHelper.dart';
 
-class Anotacao{
-
+class Anotacao {
   int? id;
   String titulo;
   String descricao;
@@ -19,19 +18,19 @@ class Anotacao{
 
   }*/
 
-  Map toMap(){//retorna um map // converte um objeto em map
+  Map toMap() {
+    //retorna um map // converte um objeto em map
     Map<String, dynamic> map = {
-      "titulo" : this.titulo,
-      "descricao" : this.descricao,
-      "data" : this.data,
+      "titulo": this.titulo,
+      "descricao": this.descricao,
+      "data": this.data,
     };
 
-    if( this.id != null ){ //so retorna com id se ele existir
+    if (this.id != null) {
+      //so retorna com id se ele existir
       map["id"] = this.id;
     }
 
     return map;
-
   }
-
 }
